@@ -12,6 +12,8 @@ btn.addEventListener("click", function(e){
 
     console.log(numero);
 
+
+
     
     
     let novoParagrafo = document.createElement("p");
@@ -22,8 +24,12 @@ btn.addEventListener("click", function(e){
 
     novoParagrafo.appendChild(resultado)
 
-    var div = document.querySelector("#conversorGraus");
+    let div = document.querySelector("#conversorGraus");
 
-    div.appendChild(novoParagrafo)
+    let removeForm = document.querySelector("#conversorGraus form")
+
+    div.removeChild(removeForm);
+    
+    div.appendChild(novoParagrafo);
 });
 
