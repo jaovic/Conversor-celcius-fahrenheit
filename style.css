@@ -20,7 +20,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 60%;
+    max-width: 700px;
     min-width: 400px;
     height: 250px;
     background-color: rgba(0, 0, 0, 0.85);
@@ -41,7 +42,7 @@ form{
     color: white;
     text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 735px) {
     .container{
         
         width: calc(100vw - 20vw);
