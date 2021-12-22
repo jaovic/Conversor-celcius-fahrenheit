@@ -1,2 +1,2 @@
 # Conversores
-aplicação web que realiza 3 operações de conversão via JS
+aplicação web que realiza uma operação de conversão de graus Celcius para Fahrenheit via JS
