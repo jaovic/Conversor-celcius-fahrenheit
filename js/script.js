@@ -10,26 +10,25 @@ btn.addEventListener("click", function(e){
 
     const numero = Number(value);
 
-    console.log(numero);
+    let fahrenheit = numero * 1.8 + 32;
 
-
-
+    
+    
+    
     
     
     let novoParagrafo = document.createElement("p");
 
-    console.log(novoParagrafo);
+    novoParagrafo.classList = "resultado";
 
-    let resultado = document.createTextNode(`o valor é ${numero}`);
+    let resultado = document.createTextNode(`${numero}º Graus são: ${fahrenheit} ºF fahrenheit.`);
 
     novoParagrafo.appendChild(resultado)
 
+    let form = document.querySelector("form");
+
     let div = document.querySelector("#conversorGraus");
 
-    let removeForm = document.querySelector("#conversorGraus form")
-
-    div.removeChild(removeForm);
-    
-    div.appendChild(novoParagrafo);
+    div.replaceChild(novoParagrafo, form);
 });
 
