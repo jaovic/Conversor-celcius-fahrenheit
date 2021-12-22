@@ -11,6 +11,10 @@ section{
     align-items: center;
     background-image: url(https://i.picsum.photos/id/486/2690/1080.jpg?hmac=jDrsqXp_ENFBpsdsO728563OFtQPfhZaetc8No1F15U);
     background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+
 }
 .container{
     display: flex;
@@ -30,9 +34,20 @@ section{
     color: white;
 }
 input{
+    
     font-size: 20px;
 }
 form{
     color: white;
     text-align: center;
+}
+@media (max-width: 600px) {
+    .container{
+        
+        width: calc(100vw - 20vw);
+        font-size: auto;
+    }
+    input{
+        font-size: auto;
+    }
 }
