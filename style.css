@@ -11,7 +11,7 @@ section{
     align-items: center;
     background-image: url(https://i.picsum.photos/id/486/2690/1080.jpg?hmac=jDrsqXp_ENFBpsdsO728563OFtQPfhZaetc8No1F15U);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
 
 
@@ -50,5 +50,8 @@ form{
     }
     input{
         font-size: auto;
+    }
+    section{
+        background-position: 25% 100%;
     }
 }
